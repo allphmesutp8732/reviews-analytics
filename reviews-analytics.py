@@ -16,3 +16,9 @@ print("平均字數為",len_data/len(data))
 #	print("This is comment no.",1000000+read)
 #	print(data[read])
 #	read -= 1
+
+new = []
+for d in data:
+	if len(d) < 100:
+		new.append(d)
+print('共有',len(new),'筆留言數 < 100')
