@@ -22,3 +22,9 @@ for d in data:
 	if len(d) < 100:
 		new.append(d)
 print('共有',len(new),'筆留言數 < 100')
+
+search_good = []
+for d in data:
+	if 'good' in d:
+		search_good.append(d)
+print('共有',len(search_good),'筆留言中含有"Good"')
